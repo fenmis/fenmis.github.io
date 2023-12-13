@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+</head>
+<body>
+    <div id="container">
+     <div class="book">
+       <p></p>
+     <div class="cover">
+       <p>CLICK HERE &hearts;</p>
+     </div>
+     </div>
+   </div>
+
+   <style>
+    body {
+      background-image: linear-gradient(135deg, #98875f 0%, #131313 100%);
+      margin: 0; /* Added to remove default body margin */
+      overflow: hidden; /* Added to prevent body overflow */
+    }
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .book {
+      position: relative;
+      border-radius: 10px;
+      width: 210px;
+      height: 300px;
+      background-image: url(in.png);
+      background-size: cover;
+      background-position: center;
+      background-size: 90%;
+      box-shadow: 1px 1px 12px #000;
+      transform-style: preserve-3d; /* Updated property name */
+      perspective: 2000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .cover {
+      top: 0;
+      position: absolute;
+      background-color: #4158D0;
+      background-image: url(out.png);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.5s;
+      transform-origin: 0;
+      box-shadow: 1px 1px 12px #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .book:hover .cover {
+      transform: rotateY(-85deg); /* Updated property name and value */
+    }
+  </style>
+  
+
+
+  </body>
+</html>
